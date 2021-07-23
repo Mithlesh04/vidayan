@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* begin::carousel */
+.carousel-root div.carousel {
+  padding-bottom : 40px
+}
+ul.control-dots li:not(.selected){
+  background: #E1C5CF !important
+  /* #E1C5CF; */
+}
+ul.control-dots li.selected{
+  background-color: #7E57C2 !important;
+}
+
+/* end::carousel */
+
+
+/* begin::timeline */
+.RFS-StepperContainer{
+  padding : 0 !important
+}
+.RFS-StepCircle{
+    background-color: transparent !important;
+    margin-left: 20px;
+}
+
+.RFS-Connector{
+  border-top: dashed #000;
+  border-top-width : 2px !important;
+  border-image-source: url("http://i.stack.imgur.com/wLdVc.png");
+  border-image-slice: 2;
+  border-image-repeat: round;  
+}
+/* end::timeline */
